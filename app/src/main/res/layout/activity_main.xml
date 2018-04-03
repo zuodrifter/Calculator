@@ -6,12 +6,11 @@
     <EditText
         android:id="@+id/input"
         android:layout_width="match_parent"
-        android:layout_height="160dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
+        android:layout_height="180dp"
         android:background="@color/black"
-        android:inputType="number" />
-         <!--第1行button-->
+        android:inputType="number"
+        android:textSize="50sp"/>
+    <!--第1行button-->
     <LinearLayout
         android:layout_below="@id/input"
         android:layout_marginTop="0dp"
@@ -23,69 +22,70 @@
             android:layout_width="0dp"
             android:layout_height="74dp"
             android:layout_weight="0.25"
-            android:text="C"
+            android:text="@string/clear"
             android:textSize="24sp"
             android:id="@+id/btn_clear" />
         <Button
             android:layout_width="0dp"
             android:layout_height="74dp"
             android:layout_weight="0.25"
-            android:text="⇐"
+            android:text="@string/del"
             android:textSize="24sp"
             android:id="@+id/btn_del" />
         <Button
             android:layout_width="0dp"
             android:layout_height="74dp"
             android:layout_weight="0.25"
-            android:text="."
+            android:text="@string/point"
             android:textSize="24sp"
             android:id="@+id/btn_point" />
         <Button
             android:layout_width="0dp"
             android:layout_height="74dp"
             android:layout_weight="0.25"
-            android:text="÷"
+            android:text="@string/chu"
             android:textSize="24sp"
             android:id="@+id/btn_chu" />
     </LinearLayout>
-         <!--第2行button-->
+    <!--第2行button-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_marginTop="70dp"
         android:orientation="horizontal"
-        android:layout_below="@+id/input">
-    <Button
+        android:layout_below="@+id/input"
+        android:id="@+id/linearLayout">
+        <Button
             android:layout_width="0dp"
             android:layout_height="74dp"
             android:layout_weight="0.25"
-            android:text="7"
+            android:text="@string/num7"
             android:textSize="24sp"
             android:id="@+id/btn_7" />
         <Button
             android:layout_width="0dp"
             android:layout_height="74dp"
             android:layout_weight="0.25"
-            android:text="8"
+            android:text="@string/num8"
             android:textSize="24sp"
             android:id="@+id/btn_8" />
         <Button
             android:layout_width="0dp"
             android:layout_height="74dp"
             android:layout_weight="0.25"
-            android:text="9"
+            android:text="@string/num9"
             android:textSize="24sp"
             android:id="@+id/btn_9" />
         <Button
             android:layout_width="0dp"
             android:layout_height="74dp"
             android:layout_weight="0.25"
-            android:text="×"
+            android:text="@string/cheng"
             android:textSize="24sp"
             android:id="@+id/btn_cheng" />
     </LinearLayout>
-          <!--第3行button-->
+    <!--第3行button-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -93,36 +93,36 @@
         android:layout_marginTop="140dp"
         android:orientation="horizontal"
         android:layout_below="@+id/input">
-    <Button
+        <Button
             android:layout_width="0dp"
             android:layout_height="74dp"
             android:layout_weight="0.25"
-            android:text="4"
+            android:text="@string/num4"
             android:textSize="24sp"
             android:id="@+id/btn_4" />
         <Button
             android:layout_width="0dp"
             android:layout_height="74dp"
             android:layout_weight="0.25"
-            android:text="5"
+            android:text="@string/num5"
             android:textSize="24sp"
             android:id="@+id/btn_5" />
         <Button
             android:layout_width="0dp"
             android:layout_height="74dp"
             android:layout_weight="0.25"
-            android:text="6"
+            android:text="@string/num6"
             android:textSize="24sp"
             android:id="@+id/btn_6" />
         <Button
             android:layout_width="0dp"
             android:layout_height="74dp"
             android:layout_weight="0.25"
-            android:text="-"
+            android:text="@string/jian"
             android:textSize="24sp"
             android:id="@+id/btn_jian" />
     </LinearLayout>
-            <!--第4行button-->
+    <!--第4行button-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -130,36 +130,36 @@
         android:layout_marginTop="210dp"
         android:orientation="horizontal"
         android:layout_below="@+id/input">
-    <Button
+        <Button
             android:layout_width="0dp"
             android:layout_height="74dp"
             android:layout_weight="0.25"
-            android:text="1"
+            android:text="@string/num1"
             android:textSize="24sp"
             android:id="@+id/btn_1" />
         <Button
             android:layout_width="0dp"
             android:layout_height="74dp"
             android:layout_weight="0.25"
-            android:text="2"
+            android:text="@string/num2"
             android:textSize="24sp"
             android:id="@+id/btn_2" />
         <Button
             android:layout_width="0dp"
             android:layout_height="74dp"
             android:layout_weight="0.25"
-            android:text="3"
+            android:text="@string/num3"
             android:textSize="24sp"
             android:id="@+id/btn_3" />
         <Button
             android:layout_width="0dp"
             android:layout_height="74dp"
             android:layout_weight="0.25"
-            android:text="+"
+            android:text="@string/jia"
             android:textSize="24sp"
             android:id="@+id/btn_jia" />
     </LinearLayout>
-            <!--第5行button-->
+    <!--第5行button-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -167,18 +167,66 @@
         android:layout_marginTop="280dp"
         android:orientation="horizontal"
         android:layout_below="@+id/input">
-    <Button
+        <Button
             android:layout_width="0dp"
             android:layout_height="74dp"
-            android:layout_weight="0.5"
-            android:text="0"
+            android:layout_weight="0.25"
+            android:text="@string/num0"
             android:textSize="24sp"
-            android:id="@+id/btn_0" />
+            android:id="@+id/btn_0"
+            android:textAllCaps="false"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="74dp"
+            android:layout_weight="0.25"
+            android:text="@string/sin"
+            android:textSize="24sp"
+            android:id="@+id/btn_sin"
+            android:textAllCaps="false"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="74dp"
+            android:layout_weight="0.25"
+            android:text="@string/cos"
+            android:textSize="24sp"
+            android:id="@+id/btn_cos"
+            android:textAllCaps="false"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="74dp"
+            android:layout_weight="0.25"
+            android:text="@string/tan"
+            android:textSize="24sp"
+            android:id="@+id/btn_tan"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+    <!--第6行button-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="350dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/input">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="74dp"
+            android:layout_weight="0.25"
+            android:text="@string/sqrt"
+            android:textSize="24sp"
+            android:id="@+id/btn_sqrt" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="74dp"
+            android:layout_weight="0.25"
+            android:text="@string/cbrt"
+            android:textSize="24sp"
+            android:id="@+id/btn_cbrt" />
         <Button
             android:layout_width="0dp"
             android:layout_height="74dp"
             android:layout_weight="0.5"
-            android:text="="
+            android:text="@string/deng"
             android:textSize="24sp"
             android:id="@+id/btn_deng" />
     </LinearLayout>
